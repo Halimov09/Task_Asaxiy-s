@@ -9,7 +9,7 @@ export const getExchangeRates = async (baseCurrency = 'USD') => {
     const response = await axios.get(`${API_BASE_URL}/${API_KEY}/latest/${baseCurrency}`);
     return response.data.conversion_rates; // Kurslar ro‘yxatini qaytaradi
   } catch (error) {
-    console.error(error)
+    console.error("Error occured fixed", error)
     throw error;
   }
 };
