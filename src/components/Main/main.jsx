@@ -8,7 +8,7 @@ const Main = () => {
   useEffect(() => {
     const fetchRates = async () => {
       try {
-        const ratesData = await getExchangeRates('AED'); // Asosiy valyuta: USD
+        const ratesData = await getExchangeRates('AED'); 
         setRates(ratesData);
         setLoading(false);
       } catch (error) {
